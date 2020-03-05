@@ -27,7 +27,7 @@ class MainApplication : Application() {
         loggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
         val builder = OkHttpClient.Builder()
         builder.addInterceptor(loggingInterceptor)
-        val retrofit = Retrofit.Builder().baseUrl("http://consoleassert.github.io/")
+        val retrofit = Retrofit.Builder().baseUrl("https://tommydry.github.io/")
             .addConverterFactory(GsonConverterFactory.create()).client(builder.build())
             .build()
 
